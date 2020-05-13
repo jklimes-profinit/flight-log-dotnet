@@ -12,8 +12,8 @@ namespace FlightLogNet.Tests.Operation
 			this.getExportToCsvOperation = getExportToCsvOperation;
 		}
 
-		// TODO 6.1: Odstraòtì skip a doplntì test, aby otestoval vrácený CSV soubor.
-		[Fact(Skip = "Not implemented.")]
+		// TODO 6.1: Odstraï¿½tï¿½ skip a doplntï¿½ test, aby otestoval vrï¿½cenï¿½ CSV soubor.
+		[Fact]
 		public void Execute_StateUnderTest_ExpectedBehavior()
 		{
 			// Arrange
@@ -22,7 +22,7 @@ namespace FlightLogNet.Tests.Operation
 			var result = getExportToCsvOperation.Execute();
 
 			// Assert
-			//Assert.Equal(expectedCsv, result);
+			Assert.Equal(expectedCsv, result);
 		}
 	}
 }
