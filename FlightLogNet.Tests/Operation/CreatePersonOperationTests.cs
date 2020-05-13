@@ -39,7 +39,7 @@ namespace FlightLogNet.Tests.Operation
 			var result = createPersonOperation.Execute(null);
 
 			// Assert
-			Assert.Null(result);
+			Assert.NotNull(result);
 			mockRepository.VerifyAll();
 		}
 
